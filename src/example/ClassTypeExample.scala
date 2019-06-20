@@ -1,4 +1,4 @@
-object ClassTypeExample {
+package example;object ClassTypeExample {
 
   // 객체 선언
   class Animal()

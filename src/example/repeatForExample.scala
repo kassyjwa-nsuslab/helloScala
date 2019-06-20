@@ -1,3 +1,5 @@
+package example
+
 object repeatForExample {
 
   def main(args: Array[String]): Unit = {
