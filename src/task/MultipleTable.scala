@@ -71,7 +71,7 @@ object MultipleTable {
     }
 
 
-    println("[3]. Patter Match ================================ ")
+    println("[3]. Pattern Match ================================ ")
 
     for(a <- 2 to 9; b <- 1 to 9){
       new twoNum(a, b) match {
@@ -81,7 +81,7 @@ object MultipleTable {
     }
 
 
-    println("[3 - 2]. Patter Match ================================ ")
+    println("[3 - 2]. Pattern Match ================================ ")
 
     for(a <- 2 to 9; b <- 1 to 9){
       printMulipleLine(a, b)
