@@ -15,7 +15,7 @@ object MultipleTable {
     * @param calculate
     * @return
     */
-  def defCalculate(calculate: Calculate): Int ={
+  def defCalculate(calculate: Calculate): Int = {
     calculate match {
       case Plus(a, b) => a + b
       case Minus(a, b) => a - b
@@ -70,14 +70,34 @@ object MultipleTable {
       printMulipleLine(a, b)
     }
 
+    val qqq = numberList.map {
+      data =>
+        val qqq = data + data * data / data
+        qqq + 100
+    }
+    numberList.foreach(println(_))
+    qqq.foreach(println(_))
+
+
 
     println("[3]. Pattern Match ================================ ")
 
+
+
     for(a <- 2 to 9; b <- 1 to 9){
-      new twoNum(a, b) match {
+      val s = twoNum(a,b)
+      s match {
         case twoNum(a, b) => printMulipleLine(a, b)
         case _ => println("ELSE")
       }
+
+      val aa = Mson("mason",23)
+
+      aa match {
+        case Mson(c,d) =>
+        case _ =>
+      }
+
     }
 
 
@@ -90,7 +110,7 @@ object MultipleTable {
 
   }
 
-  case class twoNum(num1: Int, num2: Int)
+  case class twoNum(num1: Int, var num2: Int)
 
 
 
